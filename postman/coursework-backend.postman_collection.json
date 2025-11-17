@@ -1,0 +1,38 @@
+{
+  "info": {
+    "name": "Coursework Backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /health",
+      "request": {"method": "GET", "url": "http://localhost:3000/health"}
+    },
+    {
+      "name": "GET /lessons",
+      "request": {"method": "GET", "url": "http://localhost:3000/lessons"}
+    },
+    {
+      "name": "GET /search",
+      "request": {"method": "GET", "url": "http://localhost:3000/search?query=math"}
+    },
+    {
+      "name": "POST /orders",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\n  \"name\": \"John Doe\",\n  \"phoneNumber\": \"0123456789\",\n  \"lessonIds\": [],\n  \"numberOfSpaces\": 1,\n  \"totalAmount\": 100\n}"},
+        "url": "http://localhost:3000/orders"
+      }
+    },
+    {
+      "name": "PUT /lessons/:id",
+      "request": {
+        "method": "PUT",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\n  \"space\": 5\n}"},
+        "url": "http://localhost:3000/lessons/REPLACE_WITH_ID"
+      }
+    }
+  ]
+}
