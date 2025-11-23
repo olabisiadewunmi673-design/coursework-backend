@@ -1,0 +1,32 @@
+{
+  "math.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Pi-symbol.svg",
+    "license": "Public Domain",
+    "description": "Mathematical Pi symbol",
+    "size_kb": 8.4
+  },
+  "english.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Metal_movable_type.jpg",
+    "license": "CC BY-SA 3.0",
+    "description": "Metal movable type for printing",
+    "size_kb": 121.7
+  },
+  "science.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Atom_symbol.svg",
+    "license": "CC0 Public Domain",
+    "description": "Atom symbol representing science",
+    "size_kb": 2.0
+  },
+  "history.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg",
+    "license": "CC BY-SA 2.0",
+    "description": "Pyramids of Giza",
+    "size_kb": 62.2
+  },
+  "geography.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Mercator-projection.jpg",
+    "license": "CC BY-SA 3.0",
+    "description": "World map in Mercator projection",
+    "size_kb": 68.8
+  }
+}

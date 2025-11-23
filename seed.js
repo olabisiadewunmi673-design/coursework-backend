@@ -6,18 +6,23 @@ const dbName = process.env.DB_NAME || "coursework";
 const client = new MongoClient(uri);
 
 const sampleLessons = [
-  { topic: "Math", location: "Hendon", price: 100, space: 5, image: "math.jpg" },
-  { topic: "Math", location: "Colindale", price: 80, space: 2, image: "math.jpg" },
-  { topic: "Math", location: "Brent Cross", price: 90, space: 6, image: "math.jpg" },
-  { topic: "Math", location: "Golders Green", price: 95, space: 7, image: "math.jpg" },
-  { topic: "English", location: "Hendon", price: 85, space: 3, image: "english.jpg" },
-  { topic: "English", location: "Colindale", price: 75, space: 4, image: "english.jpg" },
-  { topic: "Science", location: "Brent Cross", price: 110, space: 8, image: "science.jpg" },
-  { topic: "Science", location: "Golders Green", price: 105, space: 2, image: "science.jpg" },
-  { topic: "History", location: "Hendon", price: 70, space: 5, image: "history.jpg" },
-  { topic: "History", location: "Colindale", price: 65, space: 3, image: "history.jpg" },
-  { topic: "Geography", location: "Brent Cross", price: 80, space: 6, image: "geography.jpg" },
-  { topic: "Geography", location: "Golders Green", price: 85, space: 4, image: "geography.jpg" }
+  { subject: "Math", location: "Hendon", price: 100, spaces: 5, image: "math.jpg", icon: "fa-calculator" },
+  { subject: "Math", location: "Colindale", price: 80, spaces: 5, image: "math.jpg", icon: "fa-calculator" },
+  { subject: "Math", location: "Brent Cross", price: 90, spaces: 6, image: "math.jpg", icon: "fa-calculator" },
+  { subject: "Math", location: "Golders Green", price: 95, spaces: 7, image: "math.jpg", icon: "fa-calculator" },
+  { subject: "English", location: "Hendon", price: 85, spaces: 5, image: "english.jpg", icon: "fa-book" },
+  { subject: "English", location: "Colindale", price: 75, spaces: 5, image: "english.jpg", icon: "fa-book" },
+  { subject: "Science", location: "Brent Cross", price: 110, spaces: 8, image: "science.jpg", icon: "fa-flask" },
+  { subject: "Science", location: "Golders Green", price: 105, spaces: 5, image: "science.jpg", icon: "fa-flask" },
+  { subject: "History", location: "Hendon", price: 70, spaces: 5, image: "history.jpg", icon: "fa-landmark" },
+  { subject: "History", location: "Colindale", price: 65, spaces: 5, image: "history.jpg", icon: "fa-landmark" },
+  { subject: "Geography", location: "Brent Cross", price: 80, spaces: 6, image: "geography.jpg", icon: "fa-globe" },
+  { subject: "Geography", location: "Golders Green", price: 85, spaces: 5, image: "geography.jpg", icon: "fa-globe" },
+  { subject: "Math", location: "Online", price: 70, spaces: 10, image: "math.jpg", icon: "fa-calculator" },
+  { subject: "English", location: "Online", price: 65, spaces: 8, image: "english.jpg", icon: "fa-book" },
+  { subject: "Science", location: "Online", price: 95, spaces: 12, image: "science.jpg", icon: "fa-flask" },
+  { subject: "History", location: "Online", price: 60, spaces: 6, image: "history.jpg", icon: "fa-landmark" },
+  { subject: "Geography", location: "Online", price: 75, spaces: 9, image: "geography.jpg", icon: "fa-globe" }
 ];
 
 async function seedDatabase() {

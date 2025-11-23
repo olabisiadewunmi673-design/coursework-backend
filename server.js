@@ -49,6 +49,7 @@ app.use("/images", (req, res, next) => {
 app.get("/", (req, res) => {
   res.json({ message: "Coursework Backend API is running!" });
 });
+
 app.get("/health", async (req, res) => {
   try {
     await db.command({ ping: 1 });
@@ -68,12 +69,29 @@ app.get("/lessons", async (req, res) => {
   }
 });
 
+// GET /lessons/:id - Get single lesson
+app.get("/lessons/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const lesson = await db.collection("lessons").findOne({ _id: new ObjectId(id) });
+    if (!lesson) {
+      return res.status(404).json({ error: "Lesson not found" });
+    }
+    res.json(lesson);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch lesson" });
+  }
+});
+
 // POST /orders - Save a new order
 app.post("/orders", async (req, res) => {
   try {
     const order = {
-      ...req.body,
-      createdAt: new Date()
+      name: req.body.name,
+      phone: req.body.phone,
+      lessonIDs: req.body.lessonIDs || req.body.lessonIds,
+      numSpaces: req.body.numSpaces || req.body.numberOfSpaces,
+      timestamp: new Date()
     };
     const result = await db.collection("orders").insertOne(order);
     res.status(201).json({ ...order, _id: result.insertedId });
@@ -106,18 +124,18 @@ app.put("/lessons/:id", async (req, res) => {
 // GET /search - Full text search
 app.get("/search", async (req, res) => {
   try {
-    const { query } = req.query;
-    if (!query) {
+    const { q } = req.query;
+    if (!q) {
       return res.status(400).json({ error: "Search query is required" });
     }
     
-    const searchRegex = new RegExp(query, "i");
+    const searchRegex = new RegExp(q, "i");
     const lessons = await db.collection("lessons").find({
       $or: [
-        { topic: { $regex: searchRegex } },
+        { subject: { $regex: searchRegex } },
         { location: { $regex: searchRegex } },
-        { $expr: { $regexMatch: { input: { $toString: "$price" }, regex: query, options: "i" } } },
-        { $expr: { $regexMatch: { input: { $toString: "$space" }, regex: query, options: "i" } } }
+        { $expr: { $regexMatch: { input: { $toString: "$price" }, regex: q, options: "i" } } },
+        { $expr: { $regexMatch: { input: { $toString: "$spaces" }, regex: q, options: "i" } } }
       ]
     }).toArray();
     
