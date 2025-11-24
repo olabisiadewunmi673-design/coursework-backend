@@ -68,16 +68,16 @@ subjects = {
         'description': 'Psychology and mind studies',
         'license': 'Created Placeholder'
     },
-    'physical-education.jpg': {
-        'color': '#EF4444',  # Red
-        'icon': '⚽',
-        'description': 'Physical Education and sports',
+    'history.jpg': {
+        'color': '#8B4513',  # Brown
+        'icon': '🏛️',
+        'description': 'World History and historical events',
         'license': 'Created Placeholder'
     },
-    'foreign-languages.jpg': {
-        'color': '#3B82F6',  # Blue
-        'icon': '🌍',
-        'description': 'Foreign Languages and linguistics',
+    'geography.jpg': {
+        'color': '#006400',  # Dark Green
+        'icon': '🗺️',
+        'description': 'Geography and world maps',
         'license': 'Created Placeholder'
     }
 }

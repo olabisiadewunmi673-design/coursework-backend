@@ -59,16 +59,16 @@
     "description": "Psychology and mind studies",
     "size_kb": 10.7
   },
-  "physical-education.jpg": {
+  "history.jpg": {
     "source": "Generated placeholder image",
     "license": "Created Placeholder",
-    "description": "Physical Education and sports",
-    "size_kb": 12.4
+    "description": "World History and historical events",
+    "size_kb": 9.6
   },
-  "foreign-languages.jpg": {
+  "geography.jpg": {
     "source": "Generated placeholder image",
     "license": "Created Placeholder",
-    "description": "Foreign Languages and linguistics",
-    "size_kb": 12.3
+    "description": "Geography and world maps",
+    "size_kb": 10.5
   }
 }
