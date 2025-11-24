@@ -1,32 +1,74 @@
 {
-  "math.jpg": {
-    "source": "https://commons.wikimedia.org/wiki/File:Pi-symbol.svg",
-    "license": "Public Domain",
-    "description": "Mathematical Pi symbol",
-    "size_kb": 8.4
+  "mathematics.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Mathematics symbols and formulas",
+    "size_kb": 12.9
   },
-  "english.jpg": {
-    "source": "https://commons.wikimedia.org/wiki/File:Metal_movable_type.jpg",
-    "license": "CC BY-SA 3.0",
-    "description": "Metal movable type for printing",
-    "size_kb": 121.7
+  "english-literature.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "English Literature books and writing",
+    "size_kb": 11.1
   },
-  "science.jpg": {
-    "source": "https://commons.wikimedia.org/wiki/File:Atom_symbol.svg",
-    "license": "CC0 Public Domain",
-    "description": "Atom symbol representing science",
-    "size_kb": 2.0
+  "chemistry.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Chemistry laboratory equipment",
+    "size_kb": 11.2
   },
-  "history.jpg": {
-    "source": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg",
-    "license": "CC BY-SA 2.0",
-    "description": "Pyramids of Giza",
-    "size_kb": 62.2
+  "physics.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Physics symbols and equations",
+    "size_kb": 10.7
   },
-  "geography.jpg": {
-    "source": "https://commons.wikimedia.org/wiki/File:Mercator-projection.jpg",
-    "license": "CC BY-SA 3.0",
-    "description": "World map in Mercator projection",
-    "size_kb": 68.8
+  "computer-science.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Computer programming and code",
+    "size_kb": 13.6
+  },
+  "biology.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Biology and life sciences",
+    "size_kb": 8.7
+  },
+  "art-design.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Art and creative design",
+    "size_kb": 9.7
+  },
+  "music-theory.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Music theory and notation",
+    "size_kb": 11.1
+  },
+  "economics.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Economics and finance",
+    "size_kb": 9.2
+  },
+  "psychology.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Psychology and mind studies",
+    "size_kb": 10.7
+  },
+  "physical-education.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Physical Education and sports",
+    "size_kb": 12.4
+  },
+  "foreign-languages.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Foreign Languages and linguistics",
+    "size_kb": 12.3
   }
 }
