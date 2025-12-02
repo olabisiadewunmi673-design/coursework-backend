@@ -1,0 +1,74 @@
+{
+  "mathematics.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Mathematics symbols and formulas",
+    "size_kb": 12.9
+  },
+  "english-literature.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "English Literature books and writing",
+    "size_kb": 11.1
+  },
+  "chemistry.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Chemistry laboratory equipment",
+    "size_kb": 11.2
+  },
+  "physics.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Physics symbols and equations",
+    "size_kb": 10.7
+  },
+  "computer-science.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Computer programming and code",
+    "size_kb": 13.6
+  },
+  "biology.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Biology and life sciences",
+    "size_kb": 8.7
+  },
+  "art-design.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Art and creative design",
+    "size_kb": 9.7
+  },
+  "music-theory.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Music theory and notation",
+    "size_kb": 11.1
+  },
+  "economics.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Economics and finance",
+    "size_kb": 9.2
+  },
+  "psychology.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Psychology and mind studies",
+    "size_kb": 10.7
+  },
+  "history.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "World History and historical events",
+    "size_kb": 9.6
+  },
+  "geography.jpg": {
+    "source": "Generated placeholder image",
+    "license": "Created Placeholder",
+    "description": "Geography and world maps",
+    "size_kb": 10.5
+  }
+}
